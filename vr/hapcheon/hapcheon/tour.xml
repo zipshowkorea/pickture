@@ -91,11 +91,11 @@
 			<cube url="panos/hapcheon.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2624" />
 		</image>
 
-		<hotspot name="spot1" style="polspotstyle" ath="-110.21" atv="19.31" bgcolor="0xFFCC00" font_color="#000000" title="적산가옥거리" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/jeocksan/tour.html, 60%, 60%)"/>
-		<hotspot name="spot2" style="polspotstyle" ath="-67.67" atv="25.41" bgcolor="0xFFCC00" font_color="#000000" title="일제 강점기 소공동거리" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/sogongdong/tour.html, 60%, 60%)"/>
-		<hotspot name="spot3" style="polspotstyle" ath="53.22" atv="29.04" bgcolor="0xFFCC00" font_color="#000000" title="70년대 종로거리" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/jongro/tour.html, 60%, 60%)"/>
-		<hotspot name="spot4" style="polspotstyle" ath="87.76" atv="24.59" bgcolor="0xFFCC00" font_color="#000000" title="경성역" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/trainstation/tour.html, 60%, 60%)"/>
-		<hotspot name="spot5" style="polspotstyle" ath="175.00" atv="34.31" bgcolor="0xFFCC00" font_color="#000000" title="주차장" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/parkinglot/tour.html, 60%, 60%)"/>
+		<hotspot name="spot1" style="polspotstyle" ath="-110.21" atv="19.31" bgcolor="0xFFCC00" font_color="#000000" title="적산가옥거리" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/jeocksan/tour.html, 80%, 80%)"/>
+		<hotspot name="spot2" style="polspotstyle" ath="-67.67" atv="25.41" bgcolor="0xFFCC00" font_color="#000000" title="일제 강점기 소공동거리" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/sogongdong/tour.html, 80%, 80%)"/>
+		<hotspot name="spot3" style="polspotstyle" ath="53.22" atv="29.04" bgcolor="0xFFCC00" font_color="#000000" title="70년대 종로거리" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/jongro/tour.html, 80%, 80%)"/>
+		<hotspot name="spot4" style="polspotstyle" ath="87.76" atv="24.59" bgcolor="0xFFCC00" font_color="#000000" title="경성역" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/trainstation/tour.html, 80%, 80%)"/>
+		<hotspot name="spot5" style="polspotstyle" ath="175.00" atv="34.31" bgcolor="0xFFCC00" font_color="#000000" title="주차장" linkedscene="" scale="1" enabled="true" pole="true" onclick="hdvr_webbox(https://zipshowkorea.github.io/pickture/vr/hapcheon/parkinglot/tour.html, 80%, 80%)"/>
 
 
 	</scene>
