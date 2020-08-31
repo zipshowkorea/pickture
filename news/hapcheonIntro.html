@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en kor">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Arquito - 3D Architecture &amp; Interior HTML Template" name="description">
   <meta content="Paul, Logan Cee, Mikhail Ojereliev" name="author">
-  <title>Pickture - Spot &amp; 합천 영상 테마파크를 소개합니다.</title>
+  <title>Pickture &amp; 영화, 드라마 촬영장소를 온라인에서 체험해보세요</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400" rel="stylesheet">
   <!--CSS-->
   <link href="../assets/css/icofont.min.css" rel="stylesheet">
@@ -15,6 +15,11 @@
   <link href="../assets/css/animsition.min.css" rel="stylesheet">
   <link href="../assets/css/swiper.min.css" rel="stylesheet">
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <!--Revolution Style Sheets-->
+  <link href="../assets/css/revolution/settings.css" rel="stylesheet">
+  <link href="../assets/css/revolution/layers.css" rel="stylesheet">
+  <!--Panorama Add-On Files-->
+  <link href="../assets/css/revolution-addons/panorama/revolution.addon.panorama.css" rel="stylesheet">
   <!--Theme CSS-->
   <link href="../assets/css/theme.css" rel="stylesheet">
   <link href="../assets/css/responsive.css" rel="stylesheet">
@@ -26,19 +31,11 @@
   <link color="#5bbad5" href="../img/logo.svg" rel="mask-icon">
   <link href="../img/logo.svg" rel="shortcut icon">
   <meta content="#da532c" name="msapplication-TileColor">
-  <meta content="../favicons/browserconfig.xml" name="msapplication-config">
+  <meta content="favicons/browserconfig.xml" name="msapplication-config">
   <meta content="#ffffff" name="theme-color">
 </head>
 
 <body class="page">
-<div style="display: none">
-  <!-- svg sprite-->
-  <svg style="width:0; height:0; visibility:hidden;" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="icon_ion-icon-apps" viewBox="0 0 512 512">
-      <path d="M96 176h80V96H96v80zm120 240h80v-80h-80v80zm-120 0h80v-80H96v80zm0-120h80v-80H96v80zm120 0h80v-80h-80v80zM336 96v80h80V96h-80zm-120 80h80V96h-80v80zm120 120h80v-80h-80v80zm0 120h80v-80h-80v80z"/>
-    </symbol>
-  </svg>
-</div>
 <div class="page__inner animsition">
   <!-- 헤더 영역 -->
   <header class="header  header_fixed ">
@@ -112,10 +109,90 @@
     </div>
   </header>
   <main>
-    <div class="single-post">
-      <div class="parallax-image single-post__head">
-        <div class="parallax-image__image" data-rellax-percentage="0.5" data-rellax-speed="-3" style="background-image: url('img/hapcheon1.png'); background-size: auto 100%; background-repeat: no-repeat;background-position: (50%, 50%);"></div>
+    <div class="panorama-slider2">
+      <div class="revolution-slider">
+        <div class="revolution-slider__slider rev rev_slider fullwidthabanner false" data-version="5.4.6" style="display:none;">
+          <!-- 메인 파노라마 슬라이드 영역 -->
+          <ul>
+            <li data-panorama='{"image":"../img/panorams/pano1.jpg","autoplay":"true","mousewheelZoom":"false","smoothZoom":"true","autoplayDirection":"forward","controls":"throw","autoplaySpeed":"80","throwSpeed":"750","zoomMin":"75","zoomMax":"150","cameraFov":"75","cameraFar":"1000","sphereRadius":"100","sphereWsegments":"100","sphereHsegments":"40"}'>
+              <img alt=""
+                   class="rev-slidebg"
+                   data-bgfit="cover"
+                   data-bgposition="center center"
+                   data-bgrepeat="no-repeat"
+                   data-lazyload="../img/panorams/pano1.jpg"
+                   data-no-retina=""
+                   src="../assets/img/dummy.png"/>
+              <div class="panorama-slider2__slide">
+                <div class="container">
+                  <div class="panorama-slider2__slide-inner">
+                    <div class="panorama-slider2__subtitle tp-caption tp-resizeme"
+                         data-frames='[{"delay":400,"speed":500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-50px;opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-height="none"
+                         data-responsive_offset="on"
+                         data-type="text"
+                         data-whitespace="nowrap"
+                         data-width="none">천년의 문화, 깨끗한 자연이 어우러진 곳,
+                    </div>
+                    <br/>
+                    <div class="panorama-slider2__title-wrapper">
+                      <div class="panorama-slider2__title tp-caption tp-resizeme"
+                           data-frames='[{"delay":200,"speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"x:-50px;opacity:0;","ease":"Power3.easeInOut"}]'
+                           data-height="none"
+                           data-responsive_offset="on"
+                           data-type="text"
+                           data-whitespace="nowrap"
+                           data-width="none">합천<br/>영상테마파크
+                      </div>
+                      <div class="panorama-slider2__label tp-caption tp-resizeme"
+                           data-frames='[{"delay":200,"speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"x:50px;opacity:0;","ease":"Power3.easeInOut"}]'
+                           data-height="none"
+                           data-responsive_offset="on"
+                           data-type="text"
+                           data-whitespace="nowrap"
+                           data-width="none">
+                        <div class="panorama-slider2__label-icon icofont-hand-drag2"></div>
+                        <div class="panorama-slider2__label-value">drag it</div>
+                      </div>
+                    </div>
+                    <div class="panorama-slider2__link-wrapper">
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
+      <!-- 파노라마 슬라이드 푸터 영역 -->
+      <div class="panorama-slider2__footer">
+        <div class="container" style="background-color: transparent;">
+          <div class="panorama-slider2__footer-inner" style="background-color: transparent;">
+            <ul class="panorama-slider2__footer-menu" style="background-color: transparent;">
+              <li class="panorama-slider2__footer-item">
+                <a class="panorama-slider2__footer-link" href="page-404.html"></a>
+              </li>
+              <li class="panorama-slider2__footer-item">
+                <a class="panorama-slider2__footer-link" href="page-404.html"></a>
+              </li>
+              <li class="panorama-slider2__footer-item">
+                <a class="panorama-slider2__footer-link" href="page-404.html"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="panorama-slider2__controls">
+          <button class="panorama-slider2__control panorama-slider2__control_prev icon-chevron-left revolution-prev" type="button">
+            <span class="visually-hidden">prev</span>
+          </button>
+          <button class="panorama-slider2__control panorama-slider2__control_next icon-chevron-right revolution-next" type="button">
+            <span class="visually-hidden">next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 촬영장 소식 영역 -->
+    <div class="single-post">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-8 offset-lg-2">
@@ -123,24 +200,22 @@
               <a class="single-post__category" href="#">합천영상테마파크</a>
               <div class="single-post__date">Aug 28, 2020</div>
             </div>
-            <div class="single-post__title">합천에서 유명한 관광지,<br/>합천영상테마파크를 소개합니다.</div>
+            <div class="single-post__title">천년의 문화, 깨끗한 자연이 어우러진 곳,<br/>합천영상테마파크를 소개합니다.</div>
             <div class="single-post__intro">
-              <strong>천년의 문화, 깨끗한 자연이 어우러진 곳,</strong>
-              <strong>합천영상테마파크</strong>
+              <strong>합천영사테마파크는 대한민국의 대표적인 영상산업 중심지다. 지금까지 190여 편의 영화와 드라마, 광고, 뮤직비디오를 이곳에서 촬영했다. 시공간을 초월해 영화와 드라마 속 명장면을 찾아가는 재미는 합천영상테마파크의 가장 큰 매력이다.</strong>
             </div>
             <div class="single-post__text">
               <p>
                 <strong class="single-post__text_title">
-                  ◎ 다수의 유명한 영화와 드라마의 촬영세트장
+                  ◎ 과거로 떠나는 추억여행
                 </strong>
               </p>
               <p>
-                합천에서 유명한 관광지를 뽑자면 다섯손가락 안에드는 곳이 '합천영상테마파크'입니다.
-                사람의 손으로 만든 인공의 테마파크가 관광객들에게 인기가 있는 이유는 다수의 유명한 영화와 드라마의 촬영 세트장이기 때문입니다.
-                유명한 작품으로는 영화 <태극기 휘날리며>, <써니>, <변호인>, <전우치> 등이 있고, 드라마는 <각시탈>, <빛과 그림자>, <에덴의 동쪽> 등등 수도없이 많습니다.
-                <br/><br/>
-                평소 인상깊게 보았던 영화나 드라마 속의 배경을 눈으로 직접 볼 수도 있고, 1920년대부터 1980년대 서울의 옛 모습을 그대로 재현해 놓은 곳이라 타임머신을 타고 '시간 속으로의 여행'하는 것 같아 관광객이 많이 찾는 곳입니다.
-                이 소식지에서는 합천영상테마파크에서 유명한 몇 곳을 선정하여 소개하도록 하겠습니다.
+                누구나 한번쯤 꿈꾸는 드라마 속 주인공, 그 배경이 추억 속 그 곳이라면 더할 나위 없다.
+                일제강점기 경성과 1970~1980년대 서울의 주요 건물을 재현한 합천영상테마파크는 그 꿈을 실현해 주는 공간이다.
+                그 시적ㄹ을 떠올리는 교복과 근대 양장인 경성복을 입고 과거로 떠나는 시간 여행도 이곳에서는 가능하다.
+                옛 서울역의 이름인 경성역을 중심으로 우츠에 1970~1980년대 종로거리가, 좌측에 경성거리가 자리한다.
+                천만 관객을 동원한 국민영화 <태극기 휘날리며>가 촬영된 기차엿과 <미스터 션샤인>에 등장한 전차, 그리고 영화 <택시기사>의 한 장면을 재현한 트릭아트는 '인생 사진'을 남기는 필수 코스다.
               </p>
             </div>
             <div class="single-post__text">
@@ -335,7 +410,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="footer-interior__column col-6 col-xl-3">
-          <a href="index.html" style="position: relative; width: 100%; height: 100%;"><img src="../img/logo_white.svg" alt="Pickture logo" style="width: 60%; position: absolute; top:50%; transform: translateY(-50%);"></a>
+          <a href="index.html" style="position: relative; width: 100%; height: 100%;"><img src="img/logo_white.svg" alt="Pickture logo" style="width: 60%; position: absolute; top:50%; transform: translateY(-50%);"></a>
         </div>
         <div class="footer-interior__column col-6 col-xl-3">
           <div class="footer-interior__group-title">Company</div>
@@ -344,7 +419,7 @@
               <a class="footer-interior__list-link" href="http://zipshowkorea.com/intro.html">About</a>
             </li>
             <li class="footer-interior__list-item">
-              <a class="footer-interior__list-link" href="../contact.html">Contact</a>
+              <a class="footer-interior__list-link" href="contact.html">Contact</a>
             </li>
             <li class="footer-interior__list-item">
               <a class="footer-interior__list-link" href="http://zipshowkorea.com/work.html">Career</a>
@@ -412,6 +487,22 @@
 <script src="../assets/js/TimelineLite.min.js"></script>
 <script src="../assets/js/typed.min.js"></script>
 <script src="../assets/js/vivus.min.js"></script>
+<!--Revolution JS-->
+<script src="../assets/js/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="../assets/js/revolution/jquery.themepunch.revolution.min.js"></script>
+<!--Revolution Panorama Add-On JS-->
+<script src="../assets/js/revolution-addons/panorama/three.min.js"></script>
+<script src="../assets/js/revolution-addons/panorama/revolution.addon.panorama.min.js"></script>
+<!-- Revolution Panorama extensions JS (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading)-->
+<script src="../assets/js/revolution/extensions/revolution.extension.actions.min.js"></script>
+<script src="../assets/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+<script src="../assets/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="../assets/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="../assets/js/revolution/extensions/revolution.extension.migration.min.js"></script>
+<script src="../assets/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+<script src="../assets/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+<script src="../assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="../assets/js/revolution/extensions/revolution.extension.video.min.js"></script>
 <!--Theme JS-->
 <script src="../assets/js/theme.js"></script>
 </body>
