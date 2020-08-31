@@ -5,7 +5,7 @@
 	<include url="hdvr_webbox/hdvr_webbox.xml" />
 
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
-	<skin_settings maps="true"
+	<skin_settings maps="false"
 	               maps_type="google"
 	               maps_bing_api_key=""
 	               maps_google_api_key=""
@@ -39,7 +39,7 @@
 	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
 	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
 	               loadingtext="loading..."
-	               layout_width="100%"
+	               layout_width="0"
 	               layout_maxwidth="814"
 	               controlbar_width="-24"
 	               controlbar_height="40"
