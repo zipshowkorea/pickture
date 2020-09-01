@@ -21,7 +21,7 @@
 	               title="true"
 	               thumbs="true"
 	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
-	               thumbs_opened="false"
+	               thumbs_opened="open"
 	               thumbs_text="false"
 	               thumbs_dragging="true"
 	               thumbs_onhoverscrolling="false"
@@ -30,7 +30,7 @@
 	               thumbs_loop="false"
 	               tooltips_buttons="false"
 	               tooltips_thumbs="false"
-	               tooltips_hotspots="false"
+	               tooltips_hotspots="fals"
 	               tooltips_mapspots="false"
 	               deeplinking="false"
 	               loadscene_flags="MERGE"
@@ -55,7 +55,7 @@
 	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
 	               design_thumbborder_padding="2"
 	               design_thumbborder_bgroundedge="0"
-	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_css="color:#000000; font-family:Arial;"
 	               design_text_shadow="1"
 	               />
 
@@ -252,18 +252,19 @@
 	       />
 
 	<!-- skin_thumbtext_style - style/textfield for the (optional, skin_settings.thumbs_text) thumbnails texts -->
-	<style name="skin_thumbtext_style" type="text" align="bottom" width="100%" y="5" enabled="false" bg="false" bgborder="false" css="calc:skin_settings.design_text_css + ' text-align:center; font-size:10px;'" textshadow="get:skin_settings.design_text_shadow" />
+	<style name="skin_thumbtext_style" type="text" align="bottom" width="100%" y="5" enabled="false" bg="false" bgborder="false" css="calc:skin_settings.design_text_css + ' text-align:center; font-size:13.5px;'" textshadow="get:skin_settings.design_text_shadow" />
 
 	<!-- skin_hotspotstyle - style for the hotspots -->
 	<style name="skin_hotspotstyle" url="vtourskin_hotspot.png" edge="top" distorted="true"
-	       tooltip=""
+	       tooltip="true"
 	       linkedscene=""
 	       linkedscene_lookat=""
 	       onclick="skin_hotspotstyle_click();"
 	       depth="1000"
-	       scale="0.5"
-	       onover="tween(scale,0.55);"
-	       onout="tween(scale,0.5);"
+	       scale="0.25"
+		   alpha='0.4'
+	       onover="tween(scale,0.35); tween(alpha,1.0)"
+	       onout="tween(scale,0.25); tween(alpha,0.4)"
 	       onloaded="skin_hotspotstyle_setup();"
 	       />
 
@@ -304,10 +305,10 @@
 	       type="text"
 	       parent="STAGE"
 	       visible="false" alpha="0" enabled="false" zorder="2"
-	       align="lefttop" edge="bottom" oy="-2" width="200"
+	       align="lefttop" edge="bottom" oy="-2" width=""
 	       bg="false"
 	       textshadow="get:skin_settings.design_text_shadow" textshadowrange="6.0" textshadowangle="90" textshadowcolor="0x000000" textshadowalpha="1.0"
-	       css="calc:skin_settings.design_text_css + ' text-align:center; font-size:16px;'"
+	       css="calc:skin_settings.design_text_css + ' text-align:center; font-size:14px; background-color:rgba(255,0,0,0.4);  padding:5px 10px; border-radius:10px;'"
 	       html=""
 	       />
 
