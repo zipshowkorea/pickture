@@ -29,7 +29,7 @@
 	               thumbs_loop="false"
 	               tooltips_buttons="false"
 	               tooltips_thumbs="false"
-	               tooltips_hotspots="false"
+	               tooltips_hotspots="true"
 	               tooltips_mapspots="false"
 	               deeplinking="false"
 	               loadscene_flags="MERGE"
@@ -79,15 +79,169 @@
 
 
 	
-	<scene name="scene_jongro" title="jongro" onstart="" thumburl="panos/jongro.tiles/thumb.jpg" lat="35.54892975" lng="128.07257706" heading="0.0">
+	<scene name="scene_001" title="70년대 종로거리1" onstart="" thumburl="panos/001.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/jongro.tiles/preview.jpg" />
+		<preview url="panos/001.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/jongro.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280,2624" />
+			<cube url="panos/001.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
 		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.464" atv="6.557" linkedscene="scene_002" linkedscene_lookat="6.69,-0.84,140.00" />
+
+	</scene>
+
+	<scene name="scene_002" title="70년대 종로거리2" onstart="" thumburl="panos/002.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/002.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/002.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="7.354" atv="10.937" linkedscene="scene_003" linkedscene_lookat="-0.50,3.15,140.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-173.958" atv="9.529" linkedscene="scene_001" linkedscene_lookat="185.29,-0.26,140.00" />
+
+	</scene>
+
+	<scene name="scene_003" title="70년대 종로거리3" onstart="" thumburl="panos/003.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/003.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/003.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-0.498" atv="13.167" linkedscene="scene_004" linkedscene_lookat="3.98,2.82,140.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="171.939" atv="14.072" linkedscene="scene_002" linkedscene_lookat="-197.99,0.08,140.00" />
+
+	</scene>
+
+	<scene name="scene_004" title="70년대 종로거리4" onstart="" thumburl="panos/004.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/004.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/004.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="39.140" atv="7.079" linkedscene="scene_005" linkedscene_lookat="0.00,0.66,140.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-175.867" atv="10.499" linkedscene="scene_003" linkedscene_lookat="-190.54,-0.83,140.00" />
+
+	</scene>
+
+	<scene name="scene_005" title="70년대 종로거리5" onstart="" thumburl="panos/005.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/005.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/005.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="8.000" atv="9.441" linkedscene="scene_006" linkedscene_lookat="-5.14,-0.66,140.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="125.942" atv="9.109" linkedscene="scene_004" linkedscene_lookat="-139.97,-1.00,140.00" />
+
+	</scene>
+
+	<scene name="scene_006" title="70년대 종로거리6" onstart="" thumburl="panos/006.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/006.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/006.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.493" atv="2.155" linkedscene="scene_007" linkedscene_lookat="-0.17,0.83,140.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="159.986" atv="11.914" linkedscene="scene_005" linkedscene_lookat="-222.35,-1.48,140.00" />
+
+	</scene>
+
+	<scene name="scene_007" title="70년대 종로거리7" onstart="" thumburl="panos/007.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/007.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/007.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="3.655" atv="5.100" linkedscene="scene_008" linkedscene_lookat="1.33,0.66,140.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="177.381" atv="10.459" linkedscene="scene_006" linkedscene_lookat="-191.73,1.54,140.00" />
+
+	</scene>
+
+	<scene name="scene_008" title="70년대 종로거리8" onstart="" thumburl="panos/008.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/008.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/008.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-76.664" atv="4.378" linkedscene="scene_009" linkedscene_lookat="0.00,0.00,140.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-178.984" atv="13.306" linkedscene="scene_007" linkedscene_lookat="-200.49,-1.77,140.00" />
+
+	</scene>
+
+	<scene name="scene_009" title="70년대 종로거리9" onstart="" thumburl="panos/009.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/009.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/009.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-5.950" atv="4.446" linkedscene="scene_010" linkedscene_lookat="0.00,0.00,140.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="178.186" atv="14.429" linkedscene="scene_008" linkedscene_lookat="-266.99,0.63,140.00" />
+
+	</scene>
+
+	<scene name="scene_010" title="70년대 종로거리10" onstart="" thumburl="panos/010.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/010.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/010.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="4.487" atv="3.955" linkedscene="scene_011" linkedscene_lookat="0.00,0.00,140.00" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-179.400" atv="7.547" linkedscene="scene_009" linkedscene_lookat="-192.59,-0.24,140.00" />
+
+	</scene>
+
+	<scene name="scene_011" title="70년대 종로거리11" onstart="" thumburl="panos/011.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/011.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/011.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="3.134" atv="6.756" linkedscene="scene_012" linkedscene_lookat="0.00,0.00,120.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-173.402" atv="9.292" linkedscene="scene_010" linkedscene_lookat="-188.26,1.58,140.00" />
+
+	</scene>
+
+	<scene name="scene_012" title="70년대 종로거리12" onstart="" thumburl="panos/012.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/012.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/012.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="170.090" atv="10.605" linkedscene="scene_011" linkedscene_lookat="-185.32,-0.36,140.00" />
 
 	</scene>
 
