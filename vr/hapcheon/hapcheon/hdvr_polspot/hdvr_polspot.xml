@@ -5,7 +5,7 @@
 	-->
 
 	<hdvr_polspot_title_settings
-		edit_mode="true"
+		edit_mode="false"
 		autorotate_control="true"
 		newpano_autorotate_start="false"
 		tooltips_hotspots="false"
