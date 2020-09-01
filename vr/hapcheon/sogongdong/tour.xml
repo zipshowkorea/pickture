@@ -1,0 +1,207 @@
+﻿<krpano version="1.20.7" title="소공동 거리 VR">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               maps_loadonfirstuse="true"
+	               gyro="true"
+	               gyro_keeplookingdirection="false"
+	               webvr="true"
+	               webvr_keeplookingdirection="true"
+	               webvr_prev_next_hotspots="true"
+	               autotour="false"
+	               littleplanetintro="false"
+	               followmousecontrol="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext="loading..."
+	               layout_width="0"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+
+
+	
+	<scene name="scene_001" title="소공동 거리1" onstart="" thumburl="panos/001.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/001.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/001.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.119" atv="1.606" linkedscene="scene_002" linkedscene_lookat="-3.24,-7.84,120.00" />
+
+	</scene>
+
+	<scene name="scene_002" title="소공동 거리2" onstart="" thumburl="panos/002.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/002.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/002.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-1.568" atv="5.523" linkedscene="scene_003" linkedscene_lookat="-4.39,0.21,120.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="176.984" atv="8.096" linkedscene="scene_001" linkedscene_lookat="-185.41,-0.11,120.00" />
+
+	</scene>
+
+	<scene name="scene_003" title="소공동 거리3" onstart="" thumburl="panos/003.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/003.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/003.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="0.209" atv="4.695" linkedscene="scene_004" linkedscene_lookat="-1.05,-1.36,120.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="179.180" atv="8.921" linkedscene="scene_002" linkedscene_lookat="-181.50,1.12,120.00" />
+
+	</scene>
+
+	<scene name="scene_004" title="소공동 거리4" onstart="" thumburl="panos/004.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/004.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/004.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-5.018" atv="1.671" linkedscene="scene_005" linkedscene_lookat="-1.78,-6.07,120.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="172.119" atv="4.158" linkedscene="scene_003" linkedscene_lookat="-192.21,1.22,120.00" />
+
+	</scene>
+
+	<scene name="scene_005" title="소공동 거리5" onstart="" thumburl="panos/005.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/005.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/005.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-2.404" atv="2.506" linkedscene="scene_006" linkedscene_lookat="-0.63,-1.15,120.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="172.156" atv="6.670" linkedscene="scene_004" linkedscene_lookat="-176.13,1.43,120.00" />
+
+	</scene>
+
+	<scene name="scene_006" title="소공동 거리6" onstart="" thumburl="panos/006.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/006.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/006.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="2.508" atv="1.775" linkedscene="scene_007" linkedscene_lookat="-1.78,0.11,120.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-179.714" atv="3.781" linkedscene="scene_005" linkedscene_lookat="-186.44,0.96,120.00" />
+
+	</scene>
+
+	<scene name="scene_007" title="소공동 거리7" onstart="" thumburl="panos/007.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/007.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/007.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-7.384" atv="5.068" linkedscene="scene_008" linkedscene_lookat="-0.52,1.15,120.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="172.873" atv="7.927" linkedscene="scene_006" linkedscene_lookat="-171.89,0.09,120.00" />
+
+	</scene>
+
+	<scene name="scene_008" title="소공동 거리8" onstart="" thumburl="panos/008.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/008.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/008.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-3.863" atv="2.294" linkedscene="scene_009" linkedscene_lookat="-0.21,1.05,120.00" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="177.087" atv="7.744" linkedscene="scene_007" linkedscene_lookat="-187.92,-0.11,120.00" />
+
+	</scene>
+
+	<scene name="scene_009" title="소공동 거리9" onstart="" thumburl="panos/009.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/009.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/009.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1152,2176,4352" />
+		</image>
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="178.584" atv="3.777" linkedscene="scene_008" linkedscene_lookat="-189.38,0.07,120.00" />
+
+	</scene>
+
+
+</krpano>
