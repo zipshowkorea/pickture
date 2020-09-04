@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en kor">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Arquito - 3D Architecture &amp; Interior HTML Template" name="description">
   <meta content="Paul, Logan Cee, Mikhail Ojereliev" name="author">
-  <title>Pickture - Contact &amp; 영화, 드라마 촬영장소를 온라인에서 체험해보세요</title>
+  <title>Pickture &amp; 영화, 드라마 촬영장소를 온라인에서 체험해보세요</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400" rel="stylesheet">
   <!--CSS-->
   <link href="assets/css/icofont.min.css" rel="stylesheet">
@@ -15,6 +15,11 @@
   <link href="assets/css/animsition.min.css" rel="stylesheet">
   <link href="assets/css/swiper.min.css" rel="stylesheet">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!--Revolution Style Sheets-->
+  <link href="assets/css/revolution/settings.css" rel="stylesheet">
+  <link href="assets/css/revolution/layers.css" rel="stylesheet">
+  <!--Panorama Add-On Files-->
+  <link href="assets/css/revolution-addons/panorama/revolution.addon.panorama.css" rel="stylesheet">
   <!--Theme CSS-->
   <link href="assets/css/theme.css" rel="stylesheet">
   <link href="assets/css/responsive.css" rel="stylesheet">
@@ -31,24 +36,37 @@
 </head>
 
 <body class="page">
-<div style="display: none">
-  <!-- svg sprite-->
-  <svg style="width:0; height:0; visibility:hidden;" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="icon_ion-icon-apps" viewBox="0 0 512 512">
-      <path d="M96 176h80V96H96v80zm120 240h80v-80h-80v80zm-120 0h80v-80H96v80zm0-120h80v-80H96v80zm120 0h80v-80h-80v80zM336 96v80h80V96h-80zm-120 80h80V96h-80v80zm120 120h80v-80h-80v80zm0 120h80v-80h-80v80z"/>
-    </symbol>
-  </svg>
-</div>
 <div class="page__inner animsition">
   <!-- 헤더 영역 -->
-  <header class="header  header_fixed ">
+  <header class="header header_white header_fixed ">
     <div class="header__container">
       <div class="header__wrapper container-fluid">
         <div class="header__inner">
-          <a class="logo header__logo" href="index.html"><img src="img/logo_black.svg" alt="Pickture logo" height="80px"></a>
-          <button class="header__menu-button" type="button">
+          <a class="logo header__logo" href="index.html"><img src="img/logo_black.svg" alt="Pickture logo" height="60px"></a>
+          <button class="header__menu-button" type="button" style="display: none;">
             <span class="header__menu-button-inner"></span>
           </button>
+        </div>
+      </div>
+      <div class="header-full-page">
+        <!-- GNB -->
+        <div class="header-full-page__bottom container">
+          <ul class="top-menu header-full-page__menu">
+            <li class="top-menu__menu-item">
+              <div class="dropdown">
+                <a class="dropdown__trigger top-menu__menu-link" href="index.html">Home</a>
+            </li>
+            <li class="top-menu__menu-item">
+              <div class="dropdown">
+                <a class="dropdown__trigger top-menu__menu-link" href="story.html">Story</a>
+              </div>
+            </li>
+            <li class="top-menu__menu-item">
+              <div class="dropdown">
+                <a class="dropdown__trigger top-menu__menu-link" href="contact.html">Contact</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -65,39 +83,25 @@
         </div>
         <div class="menu-panel__menu">
           <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed menu-panel__menu-link_active" data-toggle="collapse" href="index.html">Home</a>
+            <a class="menu-panel__menu-link menu-panel__menu-link menu-panel__menu-link_active" data-toggle="collapse" href="#submenu1">Home</a>
           </div>
           <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed" data-toggle="collapse" href="news.html">News</a>          </div>
-          <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="spot.html">Spot</a>
-            <div class="menu-panel__menu-list collapse" id="submenu3">
-              <div class="menu-panel__bottom-submenu">
-                <div class="menu-panel__submenu-item">
-                  <a class="menu-panel__submenu-link" href="news-grid.html">Movie</a>
-                </div>
-                <div class="menu-panel__submenu-item">
-                  <a class="menu-panel__submenu-link" href="news-listing.html">Tv</a>
-                </div>
-                <div class="menu-panel__submenu-item">
-                  <a class="menu-panel__submenu-link" href="news-masonry.html">Location</a>
-                </div>
-              </div>
-            </div>
+            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="story.html">Story</a>
+
           </div>
           <div class="menu-panel__menu-item">
-            <a class="menu-panel__menu-link collapsed menu-panel__menu-link" data-toggle="collapse" href="contact.html">Contact</a>
+            <a class="menu-panel__menu-link collapsed collapsed" data-toggle="collapse" href="contact.html">Contact</a>
           </div>
         </div>
         <div class="menu-panel__footer">
           <div class="socials menu-panel__socials">
-            <a class="socials__social icofont-twitter" href="#">
+            <a class="socials__social icofont-twitter" href="page-404.html">
               <div class="visually-hidden">twitter</div>
             </a>
-            <a class="socials__social icofont-facebook" href="#">
+            <a class="socials__social icofont-facebook" href="page-404.html">
               <div class="visually-hidden">facebook</div>
             </a>
-            <a class="socials__social icofont-google-plus" href="#">
+            <a class="socials__social icofont-google-plus" href="page-404.html">
               <div class="visually-hidden">google plus</div>
             </a>
           </div>
@@ -112,117 +116,226 @@
     </div>
   </header>
   <main>
-    <div class="heading-default heading-default heading-default_context_default">
-      <div class="container">
-        <div class="heading-default__title">영화와 드라마 속의 촬영지들을 소개하고,<br/> 온라인 VR 체험이 가능한 픽쳐에 오신 것을 환영합니다.</div>
+    <div class="panorama-slider2">
+      <div class="revolution-slider">
+        <div class="revolution-slider__slider rev rev_slider fullwidthabanner false" data-version="5.4.6" style="display:none;">
+          <!-- 메인 파노라마 슬라이드 영역 -->
+          <ul>
+            <li data-panorama='{"image":"img/panorams/pano1.jpg","autoplay":"true","mousewheelZoom":"false","smoothZoom":"true","autoplayDirection":"forward","controls":"throw","autoplaySpeed":"80","throwSpeed":"750","zoomMin":"75","zoomMax":"150","cameraFov":"75","cameraFar":"1000","sphereRadius":"100","sphereWsegments":"100","sphereHsegments":"40"}'>
+              <img alt=""
+                   class="rev-slidebg"
+                   data-bgfit="cover"
+                   data-bgposition="center center"
+                   data-bgrepeat="no-repeat"
+                   data-lazyload="img/panorams/pano1.jpg"
+                   data-no-retina=""
+                   src="assets/img/dummy.png"/>
+              <div class="panorama-slider2__slide">
+                <div class="container">
+                  <div class="panorama-slider2__slide-inner">
+                    <div class="panorama-slider2__subtitle tp-caption tp-resizeme"
+                         data-frames='[{"delay":400,"speed":500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:-50px;opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-height="none"
+                         data-responsive_offset="on"
+                         data-type="text"
+                         data-whitespace="nowrap"
+                         data-width="none"
+                         style="font-size: 28px;">픽쳐에 오신 것을 환영합니다.
+                    </div>
+                    <br/>
+                    <div class="panorama-slider2__title-wrapper">
+                      <div class="panorama-slider2__title tp-caption tp-resizeme"
+                           data-frames='[{"delay":200,"speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"x:-50px;opacity:0;","ease":"Power3.easeInOut"}]'
+                           data-height="none"
+                           data-responsive_offset="on"
+                           data-type="text"
+                           data-whitespace="nowrap"
+                           data-width="none"
+                           style="font-size: 60px;">영화와 TV 속 촬영지들을<br/>온라인에서 VR로 체험해보세요.
+                      </div>
+                      <div class="panorama-slider2__label tp-caption tp-resizeme"
+                           data-frames='[{"delay":200,"speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"x:50px;opacity:0;","ease":"Power3.easeInOut"}]'
+                           data-height="none"
+                           data-responsive_offset="on"
+                           data-type="text"
+                           data-whitespace="nowrap"
+                           data-width="none">
+                        <div class="panorama-slider2__label-icon icofont-hand-drag2"></div>
+                        <div class="panorama-slider2__label-value">drag it</div>
+                      </div>
+                    </div>
+                    <div class="panorama-slider2__link-wrapper">
+                      <a class="panorama-slider2__link panorama-slider2__link_inverted tp-caption tp-resizeme"
+                         data-actions=""
+                         data-frames='[{"delay":400,"speed":500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"Power3.easeInOut"}]'
+                         data-height="none"
+                         data-responsive_offset="on"
+                         data-type="text"
+                         data-whitespace="nowrap"
+                         data-width="none"
+                         href="hapcheonIntro.html">view more
+                      </a>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 파노라마 슬라이드 푸터 영역 -->
+      <div class="panorama-slider2__footer">
+        <div class="container" style="background-color: transparent;">
+          <div class="panorama-slider2__footer-inner" style="background-color: transparent;">
+            <ul class="panorama-slider2__footer-menu" style="background-color: transparent;">
+              <li class="panorama-slider2__footer-item">
+                <a class="panorama-slider2__footer-link" href="page-404.html"></a>
+              </li>
+              <li class="panorama-slider2__footer-item">
+                <a class="panorama-slider2__footer-link" href="page-404.html"></a>
+              </li>
+              <li class="panorama-slider2__footer-item">
+                <a class="panorama-slider2__footer-link" href="page-404.html"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="masonry articles-list-wrapper">
+    <!-- 촬영장 소식 영역 -->
+    <div class="project-block">
       <div class="container">
-        <div class="articles-list-wrapper__head">
-          <div class="articles-list-wrapper__filter">
-            <button class="masonry__secondary-filter-button masonry__secondary-filter-button_active" data-filter="*" type="button">All</button>
-            <button class="masonry__secondary-filter-button" data-filter="Seoul" type="button">Incheon/Seoul</button>
-            <button class="masonry__secondary-filter-button" data-filter="Chungcheong-do" type="button">Chungcheong-do</button>
-            <button class="masonry__secondary-filter-button" data-filter="Gangwon-do" type="button">Gangwon-do</button>
-            <button class="masonry__secondary-filter-button" data-filter="Gyeonggi-do" type="button">Gyeonggi-do</button>
-            <button class="masonry__secondary-filter-button" data-filter="Gyeonsang-do" type="button">Gyeonsang-do</button>
-            <button class="masonry__secondary-filter-button" data-filter="Jeolla-do" type="button">Jeolla-do</button>
-            <button class="masonry__secondary-filter-button" data-filter="Jeju-Island" type="button">Jeju Island</button>
+        <div class="row">
+          <!-- 촬영장 소식지 리스트 -->
+          <div class="col-12 col-md-5 col-lg-4">
+            <div class="project-block__title">HOT 한 영화와 TV 속 촬영지의 소식을 만나보세요.</div>
+            <a class="project-block__project" href="news/news_detail2.html">
+              <span class="project-block__image-wrapper">
+                <img alt="공세리성당" class="project-block__image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzEyMDFfNjYg%2FMDAxNTEyMDk0MTYxOTA3.5PVlXrxzEJGnr3Dl_O2QlL1H-Vf5y6VPqTw22uhArJUg.lIKZcdOMQ52Tu60Q2GY2Mu1KcRtBbQxL0IzEO7Lgql0g.JPEG.yhk424%2F_MG_1935.jpg%23936x624"/>
+              </span>
+              <span class="project-block__project-content">
+                <span class="project-block__project-content-inner">
+                  <span class="project-block__project-subtitle">
+                    충남 아산
+                  </span>
+                  <span class="project-block__project-title">
+                    공세리성당
+                  </span>
+                  <span class="project-block__project-more">
+                    view Story
+                    <span class="project-block__project-more-arrow icon-chevron-right">
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </a>
+            <a class="project-block__project" href="news/news_detail2.html">
+              <span class="project-block__image-wrapper">
+                <img alt="여주 폐공장 세트장" class="project-block__image" src="https://my.matterport.com/api/v2/player/models/xaXekgJEH8C/thumb/"/>
+              </span>
+              <span class="project-block__project-content">
+                <span class="project-block__project-content-inner">
+                  <span class="project-block__project-subtitle">
+                    경기 여주
+                  </span>
+                  <span class="project-block__project-title">
+                    폐공장 세트장
+                  </span>
+                  <span class="project-block__project-more">
+                    view Story
+                    <span class="project-block__project-more-arrow icon-chevron-right">
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="col-12 col-md-7 col-lg-7 offset-lg-1">
+            <a class="project-block__project" href="news/hapcheonIntro.html">
+              <span class="project-block__image-wrapper">
+                <img alt="합천영상테마파크 드론샷" class="project-block__image" src="news/img/hapcheon1.png"/>
+              </span>
+              <span class="project-block__project-content">
+                <span class="project-block__project-content-inner">
+                  <span class="project-block__project-subtitle">
+                    경남 합천
+                  </span>
+                  <span class="project-block__project-title">
+                    영상 산업의 중심지,<br/> 합천영상테마파크
+                  </span>
+                  <span class="project-block__project-more">
+                    view Story
+                    <span class="project-block__project-more-arrow icon-chevron-right">
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </a>
+            <a class="project-block__project" href="news/news_detail1.html">
+              <span class="project-block__image-wrapper">
+                <img alt="근정전" class="project-block__image" src="https://my.matterport.com/api/v2/player/models/nAfQ7fGnUde/thumb/"/>
+              </span>
+              <span class="project-block__project-content">
+                <span class="project-block__project-content-inner">
+                  <span class="project-block__project-subtitle">
+                    서울
+                  </span>
+                  <span class="project-block__project-title">
+                    조선의 법궁,<br/>경복궁의 근정전
+                  </span>
+                  <span class="project-block__project-more">
+                    view Story
+                    <span class="project-block__project-more-arrow icon-chevron-right">
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </a>
+            <div class="project-block__read-more-column col-12 col-md-5 col-lg-4 offset-lg-1"></div>
+            <div class="project-block__read-more link link link_inverted"><a href="page-404.html">see all story</a></div>
           </div>
         </div>
-        <div class="articles-list masonry__grid">
-          <div class="articles-list__item masonry__item">
-            <a class="article-listing-item" data-filters="Gyeonsang-do" href="news/hapcheonIntro.html">
-              <div class="article-listing-item__cover">
-                <div class="article-listing-item__cover-image" style="background-image: url(news/img/hapcheon1.JPG)"></div>
-              </div>
-              <div class="article-listing-item__content">
-                <div class="article-listing-item__header">
-                  <div class="article-listing-item__category">합천영상테마파크</div>
-                  <div class="article-listing-item__date">Aug 28, 2020</div>
-                </div>
-                <div class="article-listing-item__title">천년의 문화, 깨끗한 자연이 어우러진 곳, 합천 영상테마파크를 소개합니다.</div>
-                <div class="article-listing-item__text">
-                  ◎ 다수의 유명한 영화와 드라마의 촬영세트장
-                  합천에서 유명한 관광지를 뽑자면 다섯손가락 안에드는 곳이 '합천영상테마파크'입니다. 사람의 손으로 만든 인공의 테마파크가 관광객들에게 인기가 있는 이유는 다수의 유명한 영화와 드라마의 촬영 세트장이기 때문입니다. 유명한 작품으로는 영화 <태극기 휘날리며>, <써니>, <변호...
-                </div>
-                <div class="article-listing-item__continue">Continue
-                  <span class="article-listing-item__continue-icon icofont-rounded-right"></span>
-                </div>
-              </div>
+      </div>
+    </div>
+    <!--스팟 소개 -->
+    <div class="featured-block">
+      <div class="container">
+        <div class="featured-block__head">
+          <div class="featured-block__title">촬영장 VR 체험존</div>
+          <a class="featured-block__head-link" href="spot.html">All Spots
+            <span class="featured-block__head-icon icon-chevron-right"></span>
+          </a>
+        </div>
+        <div class="featured-block__list">
+          <div class="featured-block__item">
+            <a class="featured-block__item-inner" href="spot/spot1.html">
+              <img alt="합천영상테마파크 - 이화수" src="https://my.matterport.com/api/v2/player/models/YxiKU87QZAc/thumb/"/>
+              <span class="featured-block__item-content"><span class="featured-block__item-footer"><span class="featured-block__category">합천영상테마파크</span><br/><span class="featured-block__date">Aug 27, 2020</span></span><span
+                class="featured-block__item-title">이화수</span></span>
             </a>
           </div>
-          <div class="articles-list__item masonry__item">
-            <a class="article-listing-item" data-filters="Chungcheong-do" href="spot/gongseri.html">
-              <div class="article-listing-item__cover">
-                <div class="article-listing-item__cover-image" style="background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzEyMDFfNjYg%2FMDAxNTEyMDk0MTYxOTA3.5PVlXrxzEJGnr3Dl_O2QlL1H-Vf5y6VPqTw22uhArJUg.lIKZcdOMQ52Tu60Q2GY2Mu1KcRtBbQxL0IzEO7Lgql0g.JPEG.yhk424%2F_MG_1935.jpg%23936x624"></div>
-              </div>
-              <div class="article-listing-item__content">
-                <div class="article-listing-item__header">
-                  <div class="article-listing-item__category">공세리 성당</div>
-                  <div class="article-listing-item__date">Aug 27, 2020</div>
-                </div>
-                <div class="article-listing-item__title">오랜 역사를 자랑하면서 영화와 드라마 촬영지로 유명한 아산의 공세리 성당을 소개합니다.</div>
-                <div class="article-listing-item__text">
-                  ◎ 영화, 드라마 촬영지로 유명한 성당
-                  공세리 성당은 1980년에 시작되어 오랜 역사를 자랑하는 유서 깊은 성당으로써 충청남도 지정 기념물 144호입니다.
-                  2015년도에 한국 관광공사가 대한민국을 대표하는 가장 아름 다운 성당으로 선정하기도 했다.
-                  350년이 넘는 국가보호수가 4그루나 있고 그...  
-                </div>
-                <div class="article-listing-item__continue">Continue
-                  <span class="article-listing-item__continue-icon icofont-rounded-right"></span>
-                </div>
-              </div>
+          <div class="featured-block__item">
+            <a class="featured-block__item-inner" href="spot/spot2.html">
+              <img alt="합천영상테마파크 - 적산가옥거리" src="https://my.matterport.com/api/v2/player/models/kyHgMshQgRs/thumb/"/>
+              <span class="featured-block__item-content"><span class="featured-block__item-footer"><span class="featured-block__category">합천영상테마파크</span><br/><span class="featured-block__date">Aug 27, 2020</span></span><span
+                class="featured-block__item-title">적산가옥거리</span></span>
             </a>
           </div>
-          <div class="articles-list__item masonry__item">
-            <a class="article-listing-item" data-filters="Gyeonggi-do" href="spot/yeoju.html">
-              <div class="article-listing-item__cover">
-                <div class="article-listing-item__cover-image" style="background-image: url(https://my.matterport.com/api/v2/player/models/xaXekgJEH8C/thumb/)"></div>
-              </div>
-              <div class="article-listing-item__content">
-                <div class="article-listing-item__header">
-                  <div class="article-listing-item__category">여주 폐공장</div>
-                  <div class="article-listing-item__date">Aug 25, 2020</div>
-                </div>
-                <div class="article-listing-item__title">액션씬 , 공포 , 스릴러등의 촬영이 많이 이루어지는 여주 폐공장을 소개합니다.</div>
-                <div class="article-listing-item__text">
-                  경기도 여주시에 위치한 세트장은 제작 촬영소로 2019년 관객 1600만을 동원한 극한직업이 사용을 했던 장소입니다.
-                  서울에서 1시간 이내의 교통편을 자랑하고 있으며 한적한 곳에 있는것이 장점이 있습니다.
-                  현재 액션씬 , 공포 , 스릴러의 장소로 많은 문의가 들어오고 있으며 같이 함께 할수 있는 작품들이 대박이 날수 있는 촬영장...
-                </div>
-                <div class="article-listing-item__continue">Continue
-                  <span class="article-listing-item__continue-icon icofont-rounded-right"></span>
-                </div>
-              </div>
+          <div class="featured-block__item">
+            <a class="featured-block__item-inner" href="spot/spot3.html">
+              <img alt="합천영상테마파크 - 기차전시공간" src="https://my.matterport.com/api/v2/player/models/MqDyUvD7B4t/thumb/"/>
+              <span class="featured-block__item-content"><span class="featured-block__item-footer"><span class="featured-block__category">합천영상테마파크</span><br/><span class="featured-block__date">Aug 27, 2020</span></span><span
+                class="featured-block__item-title">기차전시공간</span></span>
             </a>
           </div>
-          <div class="articles-list__item masonry__item">
-            <a class="article-listing-item" data-filters="Seoul" href="spot/gyeongbokgung.html">
-              <div class="article-listing-item__cover">
-                <div class="article-listing-item__cover-image" style="background-image: url(https://my.matterport.com/api/v2/player/models/nAfQ7fGnUde/thumb/)"></div>
-              </div>
-              <div class="article-listing-item__content">
-                <div class="article-listing-item__header">
-                  <div class="article-listing-item__category">경복궁 근정전</div>
-                  <div class="article-listing-item__date">Sep 6, 2019</div>
-                </div>
-                <div class="article-listing-item__title">조선의 법궁인 경복궁의 정전인 근정전을 소개합니다.</div>
-                <div class="article-listing-item__text">
-                  근정전(勤政殿)은 조선의 법궁인 경복궁의 정전으로, 다포계 팍작 지붕의 중층 건물이다.
-                  현재 근정전은 국보 223호로 지정되어 있는 현존하는 한국 최대의 목저 건축물 중 하나이다.
-                  1395년 조선 태조가 조선의 정궁으로 경복궁을 조성할 때, 중추를 이루는 건물로 중건되었다.
-                  임진왜란 시기 경복궁 전반이 불에 타면서 같이 소실되었다가 1868년 흥선대원군의 경복궁...
-                </div>
-                <div class="article-listing-item__continue">Continue
-                  <span class="article-listing-item__continue-icon icofont-rounded-right"></span>
-                </div>
-              </div>
+          <div class="featured-block__item">
+            <a class="featured-block__item-inner" href="spot/spot4.html">
+              <img alt="공세리성당" src="https://my.matterport.com/api/v2/player/models/wyZJ8NMK5ed/thumb/"/>
+              <span class="featured-block__item-content"><span class="featured-block__item-footer"><span class="featured-block__category">충청남도 아산</span><br/><span class="featured-block__date">Aug 27, 2020</span></span><span
+                class="featured-block__item-title">공세리성당</span></span>
             </a>
           </div>
         </div>
-        <div class="articles-list-wrapper__loader">..loading...</div>
       </div>
     </div>
   </main>
@@ -230,7 +343,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="footer-interior__column col-6 col-xl-3">
-          <a href="index.html" style="position: relative; width: 100%; height: 100%;"><img src="img/logo_white.svg" alt="Pickture logo" style="width: 60%; position: absolute; top:50%; transform: translateY(-50%);"></a>
+          <a href="index.html" style="position: relative; width: 100%; height: 100%;"><img src="img/logo_white.svg" alt="Pickture logo" style="height: 120px; position: absolute; top:50%; transform: translateY(-50%);"></a>
         </div>
         <div class="footer-interior__column col-6 col-xl-3">
           <div class="footer-interior__group-title">Company</div>
@@ -307,6 +420,22 @@
 <script src="assets/js/TimelineLite.min.js"></script>
 <script src="assets/js/typed.min.js"></script>
 <script src="assets/js/vivus.min.js"></script>
+<!--Revolution JS-->
+<script src="assets/js/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="assets/js/revolution/jquery.themepunch.revolution.min.js"></script>
+<!--Revolution Panorama Add-On JS-->
+<script src="assets/js/revolution-addons/panorama/three.min.js"></script>
+<script src="assets/js/revolution-addons/panorama/revolution.addon.panorama.min.js"></script>
+<!-- Revolution Panorama extensions JS (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading)-->
+<script src="assets/js/revolution/extensions/revolution.extension.actions.min.js"></script>
+<script src="assets/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+<script src="assets/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="assets/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="assets/js/revolution/extensions/revolution.extension.migration.min.js"></script>
+<script src="assets/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+<script src="assets/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+<script src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="assets/js/revolution/extensions/revolution.extension.video.min.js"></script>
 <!--Theme JS-->
 <script src="assets/js/theme.js"></script>
 </body>
