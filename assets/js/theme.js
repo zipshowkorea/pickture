@@ -1020,3 +1020,14 @@
     }
   })();
 })(jQuery);
+
+
+// 이미지
+var mapImg = $("#story figure img");
+
+$("#story button").click(function(){
+  var mapSrc = $(this).attr('id');
+
+  mapImg.attr('src',"img/" + mapSrc +"_map.png");
+
+});

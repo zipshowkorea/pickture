@@ -20,6 +20,15 @@
   .header-full-page {
     display: none;
   }
+
+  .header__menu-button {
+    display: block !important;
+  }
+
+  .header__menu-button-inner {
+    display: block;
+  }
+
 }
 
 @media only screen and (max-width: 1199px) {

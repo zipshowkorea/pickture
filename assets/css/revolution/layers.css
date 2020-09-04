@@ -25,7 +25,7 @@ website:   	http://www.themepunch.com
 .tp-caption.Twitter-Content a:hover
 {
 	color:#0084B4!important;
-	text-decoration:underline!important;
+	text-decoration:none !important;
 }
 
 .tp-caption.medium_grey,.medium_grey
@@ -3110,7 +3110,7 @@ website:   	http://www.themepunch.com
     }
     .tp-caption.Twitter-Content a:hover {
         color: #0084B4 !important;
-        text-decoration: underline !important
+        text-decoration: none !important
     }
     .tp-caption.Concept-Title,
     .Concept-Title {
@@ -3346,7 +3346,7 @@ website:   	http://www.themepunch.com
     }
     .tp-caption.Twitter-Content a:hover {
         color: #0084B4 !important;
-        text-decoration: underline !important
+        text-decoration: none !important
     }
     .tp-caption.Creative-Title,
     .Creative-Title {
@@ -4538,7 +4538,7 @@ tp-caption.Team-Thumb,
 .tp-caption.Twitter-Content a,
 .tp-caption.Twitter-Content a:visited {
     color: #fff !important;
-    text-decoration: underline !important;
+    text-decoration: none !important;
 }
 .tp-caption.Twitter-Content a:hover {
     color: #fff !important;
@@ -4920,7 +4920,7 @@ tp-caption.Team-Thumb,
 }
 .tp-caption.Twitter-Content a:hover {
     color: #0084B4 !important;
-    text-decoration: underline !important
+    text-decoration: none !important
 }
 .tp-caption.CreativeFrontPage-Btn,
 .CreativeFrontPage-Btn {
@@ -4978,7 +4978,7 @@ tp-caption.Team-Thumb,
 }
 .tp-caption.Twitter-Content a:hover {
     color: #0084B4 !important;
-    text-decoration: underline !important
+    text-decoration: none !important
 }
 .tp-caption.FullScreenMenu-Category,
 .FullScreenMenu-Category {
@@ -5021,7 +5021,7 @@ tp-caption.Team-Thumb,
 }
 .tp-caption.Twitter-Content a:hover {
     color: #0084B4 !important;
-    text-decoration: underline !important
+    text-decoration: none !important
 }
 .tp-caption.TechJournal-Button,
 .TechJournal-Button {
@@ -5087,7 +5087,7 @@ tp-caption.Team-Thumb,
     }
     .tp-caption.Twitter-Content a:hover {
         color: #0084B4 !important;
-        text-decoration: underline !important
+        text-decoration: none !important
     }
     #menu_forcefullwidth {
         z-index: 5000;
@@ -5629,7 +5629,7 @@ tp-caption.Team-Thumb,
     }
     .tp-caption.Twitter-Content a:hover {
         color: #0084B4 !important;
-        text-decoration: underline !important
+        text-decoration: none !important
     }
     #menu_forcefullwidth {
         z-index: 5000;

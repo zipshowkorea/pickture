@@ -3377,7 +3377,8 @@ header-full-page
   position: absolute;
   left: 0;
   width: 100%;
-  bottom: 65px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .header-full-page__menu {
@@ -3483,8 +3484,7 @@ header
 
 .header__container {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 1px;
+  padding: 20px 0;
 }
 
 .header_fixed .header__container {
@@ -3496,7 +3496,6 @@ header
   background: #fff;
   color: #242323;
   transform: translateY(100%);
-  padding-top: 28px;
   transition: background 0.5s ease, transform 0.5s ease;
   box-shadow: 0 0 65px rgba(0,0,0,0.07);
 }
@@ -3513,7 +3512,6 @@ header
   left: 0;
   top: 0;
   width: 100%;
-  margin-bottom: 25px;
 }
 
 .header__inner {
@@ -4145,7 +4143,7 @@ logo
   font-family: 'Teko', Helvetica, sans-serif;
   font-size: 36px;
   line-height: 0.555555555555556;
-  margin-top: 0.1em;
+  margin-top: 0;
   text-transform: uppercase;
   color: currentColor;
   text-decoration: none;
@@ -5697,7 +5695,7 @@ project-block
   transition: 0.5s;
 }
 
-.project-block__project:hover .project-block__image {
+주소masonry-large-block__item col-12 col-sm-6 col-lg-4 col-xl-4값:hover .project-block__image {
   transform: scale(1.04);
 }
 
@@ -6809,7 +6807,7 @@ single-post
 }
 
 .single-post__text iframe {
-  height: 60vh;
+  height: 35vh;
   margin-bottom: 30px;
 }
 
