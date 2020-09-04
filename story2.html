@@ -133,8 +133,29 @@
                 </div>
               </div>
             </div>
-            <iframe src="map.html" frameborder="0" width="100%" height="500px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-          </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 tg-verticalmiddle">
+              <figure><img src="img/all_map.png" alt="image destinations"></figure>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h2 style="text-align: center;">지역별로 찾아보기</h2>
+              <div class="articles-list-wrapper__filter" style="width: 100%;">
+                <button class="masonry__secondary-filter-button masonry__secondary-filter-button_active" data-filter="*" type="button" id="all">All</button>
+                <button class="masonry__secondary-filter-button" data-filter="Incheon" type="button" id="ic">인천</button>
+                <button class="masonry__secondary-filter-button" data-filter="Seoul" type="button" id="su">서울</button>
+                <button class="masonry__secondary-filter-button" data-filter="Gyeonggi-do" type="button" id="gg">경기도</button>
+                <button class="masonry__secondary-filter-button" data-filter="Gangwon-do" type="button" id="gw">강원도</button>
+                <button class="masonry__secondary-filter-button" data-filter="ChungNam" type="button" id="cn">충청남도</button>
+                <button class="masonry__secondary-filter-button" data-filter="ChungByj" type="button" id="cb">충청북도</button>
+                <button class="masonry__secondary-filter-button" data-filter="GyeonNam" type="button" id="gn">경상남도</button>
+                <button class="masonry__secondary-filter-button" data-filter="GyeonBuk" type="button" id="gb">경상북도</button>
+                <button class="masonry__secondary-filter-button" data-filter="JeonNam" type="button" id="jn">전라남도</button>
+                <button class="masonry__secondary-filter-button" data-filter="JeonBuk" type="button" id="jb">전라북도</button>
+                <button class="masonry__secondary-filter-button" data-filter="Jeju-Island" type="button" id="jj">제주도</button>
+              </div>
+            </div>
+        `</div>
+      </div>
+    </div>          
     <div class="masonry articles-list-wrapper">
         <div class="container">
             <div class="articles-grid masonry__grid masonry-large-block__grid row" style="position: relative; height: 823.576px;">
@@ -163,7 +184,7 @@
                 </div>
                 <div class="articles-grid__item masonry__item masonry-large-block__item col-12 col-sm-6 col-lg-3 col-xl-4" style="position: absolute; left: 0px; top: 0px;">
                     <div class="article-item" data-filters="ChungNam">
-                        <a class="project-block__project" href="spot/gongseri.html">
+                        <a class="project-block__project" href="spot/hapcheonIntro.html">
                             <span class="project-block__image-wrapper">
                                 <img alt="공세리성당" class="project-block__image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzEyMDFfNjYg%2FMDAxNTEyMDk0MTYxOTA3.5PVlXrxzEJGnr3Dl_O2QlL1H-Vf5y6VPqTw22uhArJUg.lIKZcdOMQ52Tu60Q2GY2Mu1KcRtBbQxL0IzEO7Lgql0g.JPEG.yhk424%2F_MG_1935.jpg%23936x624">                            </span>
                             <span class="project-block__project-content">
@@ -344,6 +365,7 @@
   </footer>
 </div>
 <!--JS-->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script src="assets/js/polyfill.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.viewport.min.js"></script>
