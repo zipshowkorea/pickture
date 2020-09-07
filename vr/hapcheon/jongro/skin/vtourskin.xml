@@ -261,9 +261,9 @@
 	       linkedscene_lookat=""
 	       onclick="skin_hotspotstyle_click();"
 	       depth="1000"
-	       scale="0.25"
-		   alpha='0.4'
-	       onover="tween(scale,0.35); tween(alpha,1.0)"
+	       scale="0.4"
+		   alpha='0.6'
+	       onover="tween(scale,1); tween(alpha,1.0)"
 	       onout="tween(scale,0.25); tween(alpha,0.4)"
 	       onloaded="skin_hotspotstyle_setup();"
 	       />
